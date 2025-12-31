@@ -30,13 +30,16 @@ Thumbs.db
 .coverage
 htmlcov/
 
-# Output files (user-generated)
-*.png
-*.gif
+# Output files (user-generated in working directories)
 *_sheet.png
 *_meta.json
+frame_*.png
+out/
 
-# But keep examples
+# Keep logo and examples
+!logo/
+!logo/*
 !examples/
+!examples/*
 
 
