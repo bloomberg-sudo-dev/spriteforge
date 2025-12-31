@@ -1,0 +1,92 @@
+{
+  "format": "spriteops",
+  "version": 1,
+  "canvas": { "w": 32, "h": 32 },
+  "palette": [
+    "#00000000",
+    "#000000",
+    "#f0c070",
+    "#4080d0",
+    "#3060a0",
+    "#c0c0c0",
+    "#ffffff",
+    "#8b4513",
+    "#654321",
+    "#ffcc00",
+    "#2d1b0e"
+  ],
+  "frames": [
+    {
+      "durationMs": 100,
+      "ops": [
+        ["clear", 0],
+
+        ["layer_begin", "cape"],
+        ["ellipse_fill", 4, 14, 18, 6, 8],
+        ["rect_fill", 4, 8, 14, 12, 12],
+        ["layer_end"],
+
+        ["layer_begin", "legs"],
+        ["rect_fill", 7, 11, 22, 3, 7],
+        ["rect_fill", 7, 17, 22, 3, 7],
+        ["layer_end"],
+
+        ["layer_begin", "boots"],
+        ["rect_fill", 8, 10, 27, 5, 3],
+        ["rect_fill", 8, 16, 27, 5, 3],
+        ["layer_end"],
+
+        ["layer_begin", "torso"],
+        ["rect_fill", 3, 10, 12, 11, 10],
+        ["layer_end"],
+
+        ["layer_begin", "belt"],
+        ["rect_fill", 8, 10, 21, 11, 2],
+        ["pixel", 9, 15, 21],
+        ["layer_end"],
+
+        ["layer_begin", "arms"],
+        ["rect_fill", 2, 7, 13, 3, 8],
+        ["rect_fill", 2, 21, 13, 3, 6],
+        ["layer_end"],
+
+        ["layer_begin", "hands"],
+        ["rect_fill", 2, 7, 20, 3, 2],
+        ["rect_fill", 2, 21, 18, 3, 2],
+        ["layer_end"],
+
+        ["layer_begin", "sword_blade"],
+        ["rect_fill", 5, 23, 4, 2, 16],
+        ["pixel", 6, 23, 3],
+        ["pixel", 6, 24, 3],
+        ["layer_end"],
+
+        ["layer_begin", "sword_hilt"],
+        ["rect_fill", 9, 21, 19, 6, 2],
+        ["rect_fill", 8, 23, 20, 2, 3],
+        ["layer_end"],
+
+        ["layer_begin", "head"],
+        ["ellipse_fill", 2, 15, 7, 5, 5],
+        ["layer_end"],
+
+        ["layer_begin", "hair"],
+        ["ellipse_fill", 7, 15, 5, 5, 3],
+        ["rect_fill", 7, 10, 4, 10, 4],
+        ["layer_end"],
+
+        ["layer_begin", "face"],
+        ["rect_fill", 1, 13, 6, 2, 2],
+        ["rect_fill", 1, 17, 6, 2, 2],
+        ["pixel", 6, 13, 6],
+        ["pixel", 6, 17, 6],
+        ["line", 1, 14, 10, 17, 10],
+        ["layer_end"],
+
+        ["layer_merge", "final"],
+        ["outline", 1, 1]
+      ]
+    }
+  ]
+}
+

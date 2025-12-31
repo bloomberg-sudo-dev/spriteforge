@@ -1,0 +1,85 @@
+{
+  "format": "spriteops",
+  "version": 1,
+  "canvas": { "w": 32, "h": 32 },
+  "palette": [
+    "#00000000",
+    "#000000",
+    "#8b5a2b",
+    "#cd853f",
+    "#deb887",
+    "#654321",
+    "#ffffff",
+    "#ffb6c1",
+    "#2f1810"
+  ],
+  "animations": { "idle": { "loop": true, "frames": [0] } },
+  "frames": [
+    {
+      "durationMs": 100,
+      "ops": [
+        ["clear", 0],
+
+        ["layer_begin", "tail"],
+        ["ellipse_fill", 3, 24, 12, 5, 10],
+        ["ellipse_fill", 2, 26, 8, 4, 6],
+        ["ellipse_fill", 4, 23, 14, 3, 6],
+        ["layer_end"],
+
+        ["layer_begin", "body"],
+        ["ellipse_fill", 2, 14, 20, 7, 8],
+        ["layer_end"],
+
+        ["layer_begin", "belly"],
+        ["ellipse_fill", 4, 13, 22, 5, 6],
+        ["layer_end"],
+
+        ["layer_begin", "head"],
+        ["ellipse_fill", 2, 12, 10, 6, 6],
+        ["layer_end"],
+
+        ["layer_begin", "ears"],
+        ["circle_fill", 2, 7, 5, 2],
+        ["circle_fill", 2, 17, 5, 2],
+        ["pixel", 4, 7, 5],
+        ["pixel", 4, 17, 5],
+        ["layer_end"],
+
+        ["layer_begin", "face"],
+        ["circle_fill", 6, 9, 9, 2],
+        ["circle_fill", 6, 15, 9, 2],
+        ["circle_fill", 1, 10, 9, 1],
+        ["circle_fill", 1, 14, 9, 1],
+        ["pixel", 6, 9, 8],
+        ["pixel", 6, 14, 8],
+        ["ellipse_fill", 7, 12, 12, 2, 1],
+        ["pixel", 1, 12, 11],
+        ["layer_end"],
+
+        ["layer_begin", "cheeks"],
+        ["ellipse_fill", 3, 7, 11, 2, 2],
+        ["ellipse_fill", 3, 17, 11, 2, 2],
+        ["layer_end"],
+
+        ["layer_begin", "arms"],
+        ["ellipse_fill", 2, 8, 18, 2, 4],
+        ["ellipse_fill", 2, 20, 18, 2, 4],
+        ["layer_end"],
+
+        ["layer_begin", "feet"],
+        ["ellipse_fill", 5, 10, 27, 3, 2],
+        ["ellipse_fill", 5, 18, 27, 3, 2],
+        ["layer_end"],
+
+        ["layer_begin", "acorn"],
+        ["ellipse_fill", 5, 14, 19, 2, 3],
+        ["rect_fill", 8, 13, 16, 3, 2],
+        ["layer_end"],
+
+        ["layer_merge", "final"],
+        ["outline", 1, 1]
+      ]
+    }
+  ]
+}
+
