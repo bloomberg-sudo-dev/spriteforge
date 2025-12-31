@@ -1,6 +1,6 @@
 <p align="center">
     <a href="https://github.com/bloomberg-sudo-dev/spriteforge">
-        <img src="logo/banner.png">
+        <img src="https://raw.githubusercontent.com/bloomberg-sudo-dev/spriteforge/logo/banner.png">
     </a>
 </p>
 
