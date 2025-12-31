@@ -1,0 +1,62 @@
+{
+  "format": "spriteops",
+  "version": 1,
+  "canvas": { "w": 32, "h": 32 },
+  "palette": [
+    "#00000000",
+    "#000000",
+    "#40c040",
+    "#fff5a0",
+    "#287828"
+  ],
+  "frames": [
+    {
+      "durationMs": 100,
+      "ops": [
+        ["clear", 0],
+
+        ["layer_begin", "back_haunch"],
+        ["ellipse_fill", 2, 25, 18, 5, 7],
+        ["layer_end"],
+
+        ["layer_begin", "body"],
+        ["ellipse_fill", 2, 14, 17, 10, 9],
+        ["layer_end"],
+
+        ["layer_begin", "head"],
+        ["rect_fill", 2, 6, 8, 18, 8],
+        ["circle_fill", 2, 8, 8, 3],
+        ["circle_fill", 2, 22, 8, 3],
+        ["layer_end"],
+
+        ["layer_begin", "belly"],
+        ["ellipse_fill", 3, 13, 19, 7, 7],
+        ["layer_end"],
+
+        ["layer_begin", "front_arm"],
+        ["rect_fill", 2, 4, 16, 3, 7],
+        ["layer_end"],
+
+        ["layer_begin", "feet"],
+        ["rect_fill", 2, 6, 25, 5, 2],
+        ["rect_fill", 2, 20, 25, 6, 2],
+        ["layer_end"],
+
+        ["layer_begin", "face"],
+        ["rect_fill", 1, 8, 8, 2, 2],
+        ["rect_fill", 1, 20, 8, 2, 2],
+        ["line", 1, 10, 12, 18, 12],
+        ["layer_end"],
+
+        ["layer_begin", "spots"],
+        ["pixel", 4, 24, 14],
+        ["pixel", 4, 26, 16],
+        ["pixel", 4, 25, 19],
+        ["layer_end"],
+
+        ["layer_merge", "final"],
+        ["outline", 1, 1]
+      ]
+    }
+  ]
+}

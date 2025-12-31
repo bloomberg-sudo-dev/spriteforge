@@ -1,0 +1,34 @@
+{
+  "sprite": "hero_walk",
+  "frameWidth": 32,
+  "frameHeight": 32,
+  "totalFrames": 4,
+  "scale": 4,
+  "layout": "horizontal",
+  "animations": {
+    "idle": {
+      "frames": [
+        0
+      ],
+      "loop": true,
+      "frameDurations": [
+        150
+      ]
+    },
+    "walk": {
+      "frames": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "loop": true,
+      "frameDurations": [
+        150,
+        150,
+        150,
+        150
+      ]
+    }
+  }
+}

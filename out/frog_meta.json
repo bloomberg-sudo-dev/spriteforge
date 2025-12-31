@@ -1,0 +1,9 @@
+{
+  "sprite": "frog",
+  "frameWidth": 32,
+  "frameHeight": 32,
+  "totalFrames": 1,
+  "scale": 4,
+  "layout": "horizontal",
+  "animations": {}
+}

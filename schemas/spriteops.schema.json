@@ -1,0 +1,121 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://spriteforge.dev/schemas/spriteops.schema.json",
+  "title": "Spriteops",
+  "description": "Schema for Spriteforge spriteops JSON files",
+  "type": "object",
+  "required": ["format", "canvas", "palette", "frames"],
+  "properties": {
+    "format": {
+      "type": "string",
+      "const": "spriteops",
+      "description": "Format identifier"
+    },
+    "version": {
+      "type": "integer",
+      "minimum": 1,
+      "description": "Format version"
+    },
+    "canvas": {
+      "type": "object",
+      "required": ["w", "h"],
+      "properties": {
+        "w": {
+          "type": "integer",
+          "minimum": 1,
+          "description": "Canvas width in pixels"
+        },
+        "h": {
+          "type": "integer",
+          "minimum": 1,
+          "description": "Canvas height in pixels"
+        }
+      }
+    },
+    "palette": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^#([0-9a-fA-F]{6}|[0-9a-fA-F]{8})$"
+      },
+      "minItems": 1,
+      "description": "Color palette as hex strings. Index 0 is transparent."
+    },
+    "animations": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "properties": {
+          "loop": {
+            "type": "boolean",
+            "description": "Whether the animation loops"
+          },
+          "frames": {
+            "type": "array",
+            "items": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "description": "Frame indices for this animation"
+          }
+        }
+      },
+      "description": "Named animations referencing frame indices"
+    },
+    "frames": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "durationMs": {
+            "type": "integer",
+            "minimum": 1,
+            "description": "Frame duration in milliseconds"
+          },
+          "ops": {
+            "type": "array",
+            "items": {
+              "type": "array",
+              "minItems": 1
+            },
+            "description": "Drawing operations for this frame"
+          },
+          "base": {
+            "type": "integer",
+            "minimum": 0,
+            "description": "Index of frame to inherit from"
+          },
+          "overrides": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["op_index", "op"],
+              "properties": {
+                "op_index": {
+                  "type": "integer",
+                  "minimum": 0
+                },
+                "op": {
+                  "type": "array",
+                  "minItems": 1
+                }
+              }
+            },
+            "description": "Operation overrides when using frame inheritance"
+          },
+          "append_ops": {
+            "type": "array",
+            "items": {
+              "type": "array",
+              "minItems": 1
+            },
+            "description": "Additional operations to append when using frame inheritance"
+          }
+        }
+      },
+      "minItems": 1,
+      "description": "Animation frames"
+    }
+  }
+}
+
