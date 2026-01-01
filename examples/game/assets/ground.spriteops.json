@@ -1,0 +1,43 @@
+{
+  "format": "spriteops",
+  "version": 1,
+  "canvas": { "w": 32, "h": 16 },
+  "palette": [
+    "#00000000",
+    "#DEB887",
+    "#D2691E",
+    "#8B4513",
+    "#228B22",
+    "#32CD32",
+    "#006400"
+  ],
+  "frames": [
+    {
+      "ops": [
+        ["layer_begin", "dirt"],
+        ["rect_fill", 1, 0, 4, 32, 12],
+        ["rect_fill", 2, 0, 6, 32, 10],
+        ["rect_fill", 3, 0, 10, 32, 6],
+        ["layer_end"],
+
+        ["layer_begin", "dirt_noise"],
+        ["rect_fill", 3, 0, 4, 32, 8],
+        ["layer_end"],
+        ["noise_points", 1, "dirt_noise", 20, 42],
+
+        ["layer_begin", "grass"],
+        ["rect_fill", 4, 0, 0, 32, 5],
+        ["rect_fill", 5, 0, 0, 32, 2],
+        ["layer_end"],
+
+        ["layer_begin", "grass_detail"],
+        ["rect_fill", 6, 0, 0, 32, 4],
+        ["layer_end"],
+        ["noise_points", 4, "grass_detail", 15, 123],
+
+        ["layer_merge", "dirt"],
+        ["layer_merge", "grass"]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "format": "spriteops",
+  "version": 1,
+  "canvas": { "w": 32, "h": 32 },
+  "palette": [
+    "#00000000",
+    "#2ECC71",
+    "#27AE60",
+    "#1E8449",
+    "#145A32",
+    "#58D68D"
+  ],
+  "frames": [
+    {
+      "ops": [
+        ["layer_begin", "pipe_body"],
+        ["rect_fill", 2, 4, 0, 24, 32],
+        ["rect_fill", 5, 5, 0, 4, 32],
+        ["rect_fill", 3, 24, 0, 3, 32],
+        ["rect_stroke", 4, 4, 0, 24, 32],
+        ["layer_end"],
+
+        ["layer_begin", "pipe_cap"],
+        ["rect_fill", 1, 0, 0, 32, 8],
+        ["rect_fill", 5, 1, 1, 6, 6],
+        ["rect_fill", 3, 26, 1, 5, 6],
+        ["rect_stroke", 4, 0, 0, 32, 8],
+        ["line", 4, 1, 7, 30, 7],
+        ["layer_end"],
+
+        ["layer_merge", "pipe_body"],
+        ["layer_merge", "pipe_cap"]
+      ]
+    }
+  ]
+}

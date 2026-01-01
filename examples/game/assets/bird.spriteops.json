@@ -1,0 +1,102 @@
+{
+  "format": "spriteops",
+  "version": 1,
+  "canvas": { "w": 16, "h": 16 },
+  "palette": [
+    "#00000000",
+    "#FFD700",
+    "#FFA500",
+    "#FF6B00",
+    "#FFFFFF",
+    "#000000"
+  ],
+  "frames": [
+    {
+      "ops": [
+        ["layer_begin", "body"],
+        ["ellipse_fill", 1, 7, 8, 5, 4],
+        ["ellipse_fill", 2, 7, 8, 4, 3],
+        ["layer_end"],
+
+        ["layer_begin", "wing_up"],
+        ["ellipse_fill", 2, 6, 5, 3, 2],
+        ["ellipse_fill", 3, 6, 5, 2, 1],
+        ["layer_end"],
+
+        ["layer_begin", "eye"],
+        ["circle_fill", 4, 10, 6, 2],
+        ["circle_fill", 5, 11, 6, 1],
+        ["layer_end"],
+
+        ["layer_begin", "beak"],
+        ["poly_fill", 3, 13, 7, 15, 8, 13, 9],
+        ["layer_end"],
+
+        ["layer_merge", "body"],
+        ["layer_merge", "wing_up"],
+        ["layer_merge", "eye"],
+        ["layer_merge", "beak"]
+      ]
+    },
+    {
+      "ops": [
+        ["layer_begin", "body"],
+        ["ellipse_fill", 1, 7, 8, 5, 4],
+        ["ellipse_fill", 2, 7, 8, 4, 3],
+        ["layer_end"],
+
+        ["layer_begin", "wing_mid"],
+        ["ellipse_fill", 2, 6, 8, 3, 2],
+        ["ellipse_fill", 3, 6, 8, 2, 1],
+        ["layer_end"],
+
+        ["layer_begin", "eye"],
+        ["circle_fill", 4, 10, 6, 2],
+        ["circle_fill", 5, 11, 6, 1],
+        ["layer_end"],
+
+        ["layer_begin", "beak"],
+        ["poly_fill", 3, 13, 7, 15, 8, 13, 9],
+        ["layer_end"],
+
+        ["layer_merge", "body"],
+        ["layer_merge", "wing_mid"],
+        ["layer_merge", "eye"],
+        ["layer_merge", "beak"]
+      ]
+    },
+    {
+      "ops": [
+        ["layer_begin", "body"],
+        ["ellipse_fill", 1, 7, 8, 5, 4],
+        ["ellipse_fill", 2, 7, 8, 4, 3],
+        ["layer_end"],
+
+        ["layer_begin", "wing_down"],
+        ["ellipse_fill", 2, 6, 11, 3, 2],
+        ["ellipse_fill", 3, 6, 11, 2, 1],
+        ["layer_end"],
+
+        ["layer_begin", "eye"],
+        ["circle_fill", 4, 10, 6, 2],
+        ["circle_fill", 5, 11, 6, 1],
+        ["layer_end"],
+
+        ["layer_begin", "beak"],
+        ["poly_fill", 3, 13, 7, 15, 8, 13, 9],
+        ["layer_end"],
+
+        ["layer_merge", "body"],
+        ["layer_merge", "wing_down"],
+        ["layer_merge", "eye"],
+        ["layer_merge", "beak"]
+      ]
+    }
+  ],
+  "animations": {
+    "flap": {
+      "frameIndices": [0, 1, 2, 1],
+      "durationMs": 100
+    }
+  }
+}

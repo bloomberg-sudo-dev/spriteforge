@@ -1,0 +1,26 @@
+{
+  "format": "spriteops",
+  "version": 1,
+  "canvas": { "w": 24, "h": 12 },
+  "palette": [
+    "#00000000",
+    "#FFFFFF",
+    "#F0F0F0",
+    "#E8E8E8"
+  ],
+  "frames": [
+    {
+      "ops": [
+        ["layer_begin", "cloud"],
+        ["ellipse_fill", 2, 4, 4, 4, 3],
+        ["ellipse_fill", 1, 10, 2, 5, 4],
+        ["ellipse_fill", 2, 16, 4, 3, 3],
+        ["ellipse_fill", 1, 8, 5, 3, 3],
+        ["ellipse_fill", 1, 14, 5, 3, 3],
+        ["layer_end"],
+
+        ["layer_merge", "cloud"]
+      ]
+    }
+  ]
+}
