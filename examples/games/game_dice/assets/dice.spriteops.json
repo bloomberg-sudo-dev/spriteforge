@@ -1,0 +1,101 @@
+{
+  "format": "spriteops",
+  "version": 1,
+  "canvas": { "w": 24, "h": 24 },
+  "palette": [
+    "#00000000",
+    "#FFFFFF",
+    "#000000",
+    "#E0E0E0",
+    "#B0B0B0"
+  ],
+  "frames": [
+    {
+      "comment": "Side 1",
+      "ops": [
+        ["rect_fill", 1, 2, 2, 20, 20],
+        ["rect_stroke", 4, 2, 2, 20, 20],
+        ["circle_fill", 2, 12, 12, 3]
+      ]
+    },
+    {
+      "comment": "Side 2",
+      "ops": [
+        ["rect_fill", 1, 2, 2, 20, 20],
+        ["rect_stroke", 4, 2, 2, 20, 20],
+        ["circle_fill", 2, 7, 7, 3],
+        ["circle_fill", 2, 17, 17, 3]
+      ]
+    },
+    {
+      "comment": "Side 3",
+      "ops": [
+        ["rect_fill", 1, 2, 2, 20, 20],
+        ["rect_stroke", 4, 2, 2, 20, 20],
+        ["circle_fill", 2, 6, 6, 3],
+        ["circle_fill", 2, 12, 12, 3],
+        ["circle_fill", 2, 18, 18, 3]
+      ]
+    },
+    {
+      "comment": "Side 4",
+      "ops": [
+        ["rect_fill", 1, 2, 2, 20, 20],
+        ["rect_stroke", 4, 2, 2, 20, 20],
+        ["circle_fill", 2, 7, 7, 3],
+        ["circle_fill", 2, 17, 7, 3],
+        ["circle_fill", 2, 7, 17, 3],
+        ["circle_fill", 2, 17, 17, 3]
+      ]
+    },
+    {
+      "comment": "Side 5",
+      "ops": [
+        ["rect_fill", 1, 2, 2, 20, 20],
+        ["rect_stroke", 4, 2, 2, 20, 20],
+        ["circle_fill", 2, 7, 7, 3],
+        ["circle_fill", 2, 17, 7, 3],
+        ["circle_fill", 2, 7, 17, 3],
+        ["circle_fill", 2, 17, 17, 3],
+        ["circle_fill", 2, 12, 12, 3]
+      ]
+    },
+    {
+      "comment": "Side 6",
+      "ops": [
+        ["rect_fill", 1, 2, 2, 20, 20],
+        ["rect_stroke", 4, 2, 2, 20, 20],
+        ["circle_fill", 2, 7, 6, 3],
+        ["circle_fill", 2, 17, 6, 3],
+        ["circle_fill", 2, 7, 12, 3],
+        ["circle_fill", 2, 17, 12, 3],
+        ["circle_fill", 2, 7, 18, 3],
+        ["circle_fill", 2, 17, 18, 3]
+      ]
+    },
+    {
+      "comment": "Roll Frame A (Skewed/Blurred)",
+      "ops": [
+        ["rect_fill", 1, 4, 2, 16, 20],
+        ["rect_stroke", 4, 4, 2, 16, 20],
+        ["circle_fill", 2, 12, 8, 2],
+        ["circle_fill", 2, 12, 16, 2]
+      ]
+    },
+    {
+      "comment": "Roll Frame B (Smaller/Distant)",
+      "ops": [
+        ["rect_fill", 1, 6, 6, 12, 12],
+        ["rect_stroke", 4, 6, 6, 12, 12],
+        ["circle_fill", 2, 12, 12, 2]
+      ]
+    }
+  ],
+  "animations": {
+    "roll": {
+      "frameIndices": [6, 1, 7, 3, 6, 5, 7, 2],
+      "durationMs": 50
+    }
+  }
+}
+
